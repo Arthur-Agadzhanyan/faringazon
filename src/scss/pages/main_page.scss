@@ -1,0 +1,107 @@
+.main_page{
+  .intro{
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 112px);
+    background: linear-gradient(110.32deg, #FCB84C 4.11%, #FFD758 45.66%), #FFD658;
+
+    display: flex;
+    justify-content: center;
+
+    .container{
+      max-width: 100%;
+    }
+
+    .intro__lines{
+      position: absolute;
+      top: -5%;
+      left: -2%;
+      width: 60vw;
+      mix-blend-mode: soft-light;
+      z-index: 1;
+      pointer-events: none;
+    }
+    &__content{
+      padding-top: 18vh;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+
+      .content__info{
+        flex: 0 1 45%;
+        padding-top: 100px;
+        padding-left: 13vw;
+        .info__title{
+          @include text(#000,48px,600);
+          margin-bottom: 54px;
+        }
+        .info__btns{
+          display: flex;
+          align-items: center;
+          .btns__item{
+            background: transparent;
+            min-width: 188px;
+
+            display: flex;
+            align-items: center;
+            padding-left: 15px !important;
+            margin-right: 16px;
+
+            span{
+              @include text(#000,16px, 600);
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              margin-left: 10px;
+              transition: all .2s linear;
+            }
+
+            &-vanil{
+              border: 1px solid #F9AA44;
+              padding: 5px 0px 4px 0px;
+              transition: all .2s linear;
+
+              &:hover,&-active{
+                background: #F9AA44;
+              }
+            }
+            &-raspberry{
+              padding: 1px 0px;
+              border: 1px solid #EB0038;
+              transition: all .2s linear;
+
+              path{
+                transition: all .2s linear;
+              }
+
+              &:hover, &-active{
+                path{
+                  fill: #fff;
+                }
+                span{
+                  color: #fff;
+                }
+                background: #EB0038;
+              }
+            }
+          }
+        }
+      }
+
+      .content__slider {
+        flex: 0 1 50%;
+        min-width: 0px;
+
+        .intro_slider{
+          overflow: hidden !important;
+          &__slide{
+            overflow: hidden;
+            img{
+              max-width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
