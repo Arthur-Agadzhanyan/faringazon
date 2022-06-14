@@ -59,3 +59,7 @@ a{
     width: 100%;
     margin: 0 auto;
 }
+
+.section_title{
+    @include text(#000,40px,600,49px)
+}

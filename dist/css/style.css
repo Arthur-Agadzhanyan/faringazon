@@ -426,7 +426,7 @@ template {
   display: block;
   margin-right: 54px;
   color: #484848;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   text-transform: uppercase;
@@ -457,6 +457,94 @@ template {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.footer {
+  padding: 30px 0px;
+  background: #2464AF;
+}
+
+.footer .footer__content {
+  max-width: 95%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer .footer__content .content__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer .footer__content .content__top .top__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__content .content__top .top__menu .menu__item {
+  display: block;
+  margin: 0px 27px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.footer .footer__content .content__top .top__menu .menu__item:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer .footer__content .content__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__content .content__bottom .bottom__text {
+  max-width: 850px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 10px;
+}
+
+.footer .footer__content .content__bottom .bottom__links {
+  text-align: right;
+}
+
+.footer .footer__content .content__bottom .bottom__links .links__item {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: normal;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  display: block;
+}
+
+.footer .footer__content .content__bottom .bottom__links .links__item:first-child {
+  margin-bottom: 8px;
 }
 
 .main_page .intro {
@@ -611,6 +699,251 @@ template {
   max-width: 100% !important;
 }
 
+.main_page .faringazon_warning {
+  padding: 32px;
+  padding-bottom: 0px;
+  padding-right: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.main_page .faringazon_warning .faringazon_warning__text {
+  font-family: Attentica;
+  color: #BABABA;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 83px;
+  letter-spacing: -0.02em;
+}
+
+.main_page .faringazon_warning .faringazon_warning__btn {
+  background: transparent;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.main_page .double_action {
+  padding-top: 32px;
+}
+
+.main_page .double_action__content {
+  padding-top: 67px;
+  padding-bottom: 57px;
+  padding-left: 140px;
+  padding-right: 80px;
+  background: #FFEBBA;
+  border-radius: 40px;
+}
+
+.main_page .double_action__content .content__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.main_page .double_action__content .content__info .info__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  color: #000;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+}
+
+.main_page .double_action__content .content__info .info__title strong {
+  font-weight: 700;
+}
+
+.main_page .double_action__content .content__info .info__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.main_page .double_action__content .content__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_page .double_action__content .content__numbers .numbers__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 60px;
+}
+
+.main_page .double_action__content .content__numbers .numbers__item .item__number {
+  color: #F9AA44;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 98px;
+}
+
+.main_page .double_action__content .content__numbers .numbers__item .item__info {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  max-width: 270px;
+  margin-left: 15px;
+}
+
+.main_page .benefits {
+  margin-top: -110px;
+}
+
+.main_page .benefits .benefits__image {
+  display: block;
+  margin-bottom: -13%;
+  margin-left: auto;
+  margin-right: 12vw;
+}
+
+.main_page .benefits .benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_page .benefits .benefits__list .list__item {
+  max-width: 35vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 100px;
+  padding-top: 85px;
+  padding-bottom: 40px;
+  border-bottom-right-radius: 230px;
+  border-top-right-radius: 230px;
+}
+
+.main_page .benefits .benefits__list .list__item-blue {
+  background: #3056A5;
+  position: relative;
+  z-index: 5;
+}
+
+.main_page .benefits .benefits__list .list__item-green {
+  background: #3A8A57;
+  position: relative;
+  z-index: 4;
+}
+
+.main_page .benefits .benefits__list .list__item-red {
+  background: #F27A67;
+  position: relative;
+  z-index: 3;
+}
+
+.main_page .benefits .benefits__list .list__item-orange {
+  background: #F9AA44;
+  position: relative;
+  z-index: 2;
+}
+
+.main_page .benefits .benefits__list .list__item:not(:first-child) {
+  margin-left: -15vw;
+}
+
+.main_page .benefits .benefits__list .list__item:first-child {
+  margin-left: -6.5vw;
+}
+
+.main_page .benefits .benefits__list .list__item .item__info {
+  margin-left: auto;
+  text-align: center;
+}
+
+.main_page .benefits .benefits__list .list__item .item__info .info__text {
+  width: 240px;
+  margin-top: 14px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.main_page .partners {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.main_page .partners__content .content__list {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_page .partners__content .content__list .list__item {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 18%;
+          flex: 0 1 18%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.main_page .partners__content .content__list .list__item:not(:nth-child(5n)):after {
+  content: url("../../img/logos/partners/mark.svg");
+  position: absolute;
+  bottom: -80px;
+  right: -50px;
+}
+
+.main_page .partners__content .content__list .list__item-without:after {
+  content: "" !important;
+}
+
+.main_page .partners__content .content__list .list__item-left {
+  text-align: left;
+}
+
+.main_page .partners__content .content__list .list__item img {
+  max-width: 100%;
+}
+
 .button {
   font-size: 16px;
   font-weight: 500;
@@ -664,4 +997,11 @@ a {
   max-width: 1500px;
   width: 100%;
   margin: 0 auto;
+}
+
+.section_title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 49px;
 }

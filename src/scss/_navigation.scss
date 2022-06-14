@@ -17,7 +17,7 @@
       .menu__item{
         display: block;
         margin-right: 54px;
-        @include text($grey,18px,500,22px);
+        @include text($grey,16px,500,22px);
         text-transform: uppercase;
 
         transition: all .2s linear;

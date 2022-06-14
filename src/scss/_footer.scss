@@ -1,0 +1,65 @@
+.footer{
+  padding: 30px 0px;
+  background: $blue;
+  .footer__content{
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+
+    .content__top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .top__pharmstandart{
+
+      }
+
+      .top__menu{
+        display: flex;
+
+        .menu__item{
+          display: block;
+          margin: 0px 27px;
+          @include text(#fff,16px,500,22px);
+          text-transform: uppercase;
+
+          transition: all .2s linear;
+
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .top__logo{
+
+      }
+    }
+
+    .content__bottom{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .bottom__text{
+        max-width: 850px;
+        @include text(#fff,12px,300);
+        margin-left: 10px;
+      }
+      .bottom__links{
+        text-align: right;
+        .links__item{
+          @include text(#fff,12px,300);
+          text-decoration-line: underline;
+
+          display: block;
+
+          &:first-child{
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}

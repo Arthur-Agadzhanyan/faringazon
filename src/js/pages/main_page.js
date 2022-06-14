@@ -33,3 +33,14 @@ raspberryBtn.addEventListener('click',()=>{
     vanilBtn.classList.remove('btns__item-vanil-active')
     raspberryBtn.classList.add('btns__item-raspberry-active')
 })
+
+const mainPageFaringazonWarning = document.querySelector('#main_page-faringazon_warning')
+const mainPageFaringazonWarningCloseBtn = mainPageFaringazonWarning.querySelector('.faringazon_warning__btn')
+
+mainPageFaringazonWarningCloseBtn.addEventListener('click',()=>{
+    mainPageFaringazonWarning.style = 'opacity: 0;'
+
+    setTimeout(()=>{
+        mainPageFaringazonWarning.style = 'display: none;'
+    },1000)
+})
