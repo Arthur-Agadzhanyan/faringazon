@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
-    "fonts": "gulp otf2ttf"
+    "fonts": "gulp otf2ttf",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -29,5 +30,8 @@
     "gulp-webp-html": "^1.0.2",
     "gulp-webpcss": "^1.1.1",
     "webp-converter": "^2.2.3"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
