@@ -426,6 +426,285 @@
     }
   }
 
+  .questions{
+    position: relative;
+    padding-top: 116px;
+
+    .questions__yellow{
+      position: absolute;
+      top: 177px;
+      left: 0;
+      right: 0;
+      height: 70%;
+      background: linear-gradient(110.32deg, #FCB84C 4.11%, #FFD758 45.66%), #FFD658;
+      z-index: -1;
+    }
+
+    &__content{
+      padding: 0px 66px;
+      margin-left: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .content__image{
+        flex: 0 1 40%;
+        padding-right: 33px;
+        margin-left: auto;
+        img{
+          max-width: 100%;
+        }
+      }
+
+      .content__info{
+        flex: 0 1 57%;
+        background: #ECECEC;
+        border-radius: 40px;
+
+        .info__container{
+          padding: 68px 100px;
+          padding-bottom: 71px;
+        }
+
+        .button{
+          min-width: 268px;
+          font-weight: 600;
+          background: transparent;
+          border: 2px solid $blue;
+
+          margin-top: 26px;
+          margin-bottom: 42px;
+
+          &:hover{
+            background: $blue;
+            color: #fff;
+          }
+        }
+
+        .info__accordions{
+
+          .accordions__item {
+            border-top: none;
+            margin-bottom: 32px;
+
+            .accordion__input {
+              display: none;
+            }
+
+            .accordion__trigger {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+
+              width: 100%;
+
+              @include text(black, 24px, 600,29px);
+              cursor: pointer;
+
+              -webkit-touch-callout: none;
+              /* iOS Safari */
+              -webkit-user-select: none;
+              /* Chrome/Safari/Opera */
+              -khtml-user-select: none;
+              /* Konqueror */
+              -moz-user-select: none;
+              /* Firefox */
+              -ms-user-select: none;
+              /* Internet Explorer/Edge */
+              user-select: none;
+
+              span{
+                flex-grow: 1;
+                padding-bottom: 14px;
+                padding-right: 40px;
+                border-bottom: 1px solid #8D8D8D;
+              }
+
+              .trigger__arrow {
+                margin-bottom: -2px;
+              }
+            }
+
+            .accordion__content {
+              max-height: 280px;
+              overflow: hidden;
+              height: 0px;
+              transition: height .2s linear;
+
+              .content__container {
+                max-height: 280px;
+                overflow: auto;
+                overflow-x: hidden;
+                margin-right: 8px;
+                margin-top: 8px;
+
+                &::-webkit-scrollbar {
+                  width: 2px;
+
+                }
+
+                /* Track */
+                &::-webkit-scrollbar-track {
+                }
+
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                  background: rgba(79, 79, 79,.1);
+                  margin-right: 8px;
+                  border-radius: 4px;
+                }
+
+                .content__text{
+                  padding-top: 16px;
+                  @include text(#484848,20px,400,30px);
+                }
+
+              }
+            }
+
+            .accordion__input:checked~.accordion__content {
+              opacity: 1;
+              height: initial;
+              transition: .2s linear;
+            }
+            
+            .trigger__arrow-minus{
+              display: none;
+            }
+            .trigger__arrow-plus{
+              display: block;
+              margin-bottom: -5px;
+            }
+
+            .accordion__input:checked + .accordion__trigger .trigger__arrow-plus{
+              display: none;
+            }
+            .accordion__input:checked + .accordion__trigger .trigger__arrow-minus{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .articles{
+    &__content{
+      margin-left: auto;
+      max-width: 89vw;
+
+      .content__slider{
+          margin-top: 53px;
+          color: #fff;
+
+          .slider__item{
+            border-radius: 10px;
+            display: flex;
+            // justify-content: center;
+            align-items: flex-end;
+            min-height: 433px;
+            overflow: hidden;
+
+            position: relative;
+
+            .slide__overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              z-index: -1;
+
+              background: rgba(0, 0, 0,.7);
+            }
+
+            .slide__image {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              z-index: -4;
+              width: 100%;
+              min-height: 100%;
+              margin: 0 auto;
+            }
+
+            .slide__info {
+              max-width: 400px;
+              padding: 25px 25px 30px 41px;
+
+              .info__title {
+                @include text(#fff,24px,600,36px);
+                margin-bottom: 10px;
+
+                @media screen and (max-width: 1200px) {
+                  @include text(#fff,22px,600,30px);
+                }
+
+                @media screen and (max-width: 650px) {
+                  @include text(#fff,18px,600,22px);
+                }
+              }
+              .info__text {
+                @include text(#fff,16px,400,20px);
+
+                @media screen and (max-width: 650px) {
+                  @include text(#fff,14px,400,18px);
+                }
+
+                @media screen and (max-width: 400px) {
+                  @include text(#fff,12px,400,15px);
+                }
+              }
+
+              .info__link{
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                margin-right: auto;
+
+                transition: all .2s linear;
+
+                span{
+                  margin-right: 5px;
+                  @include text(#fff,16px,400,20px);
+                  transition: all .2s linear;
+                }
+
+                img,span{
+                  display: block;
+                }
+
+                &:hover{
+                  span{
+                    margin-right: 10px;
+                  }
+                }
+              }
+
+              @media screen and (max-width: 1200px) {
+                padding: 25px 25px 30px 25px;
+              }
+              @media screen and (max-width: 650px) {
+                padding: 16px 20px 20px 17px;
+              }
+            }
+            @media screen and (max-width: 700px) {
+              min-height: 390px;
+            }
+
+            @media screen and (max-width: 500px) {
+              min-height: 364px;
+            }
+            @media screen and (max-width: 400px) {
+              min-height: 354px;
+            }
+          }
+      }
+    }
+  }
+
   .partners{
     padding-top: 100px;
     padding-bottom: 150px;
