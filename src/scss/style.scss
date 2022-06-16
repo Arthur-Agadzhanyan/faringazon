@@ -55,12 +55,24 @@ a{
 }
 
 .container{
-    max-width: 1500px;
+    max-width: 1600px;
+    padding: 0px 50px;
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (min-width: 2100px) {
+        max-width: 1700px;
+    }
 }
 
 .section_title{
-    @include text(#000,40px,600,49px)
+    @include text(#000,40px,600,49px);
+    
+    @media screen and (max-width: 600px) {
+        @include text(#000,34px,600);
+    }
+    @media screen and (max-width: 400px) {
+        @include text(#000,28px,600);
+    }
 }
 

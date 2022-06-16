@@ -398,6 +398,10 @@ template {
 }
 
 .nav_header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
   padding: 32px 0px;
 }
 
@@ -563,6 +567,7 @@ template {
 
 .main_page .intro .container {
   max-width: 100%;
+  padding: 0;
 }
 
 .main_page .intro .intro__lines {
@@ -1520,7 +1525,8 @@ a {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1600px;
+  padding: 0px 50px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1532,7 +1538,86 @@ a {
   line-height: 49px;
 }
 
+@media screen and (min-width: 2000px) {
+  .main_page .intro__content .content__slider .intro_slider__slide img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .container {
+    max-width: 1700px;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .main_page .articles__content {
+    max-width: 84vw;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .main_page .articles__content {
+    max-width: 1690px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footer .footer__content .content__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer .footer__content .content__top .top__logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 41px;
+  }
+
+  .footer .footer__content .content__top .top__pharmstandart {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 41px;
+  }
+
+  .footer .footer__content .content__top .top__menu {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .footer .footer__content .content__bottom {
+    margin-top: 40px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
+  .footer .footer__content .content__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer .footer__content .content__bottom .bottom__links {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .footer .footer__content .content__bottom .bottom__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
   .main_page .articles__content .content__slider .slider__item .slide__info .info__title {
     color: #fff;
     font-size: 22px;
@@ -1545,9 +1630,67 @@ a {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .main_page .articles__content {
+    padding-left: 32px;
+  }
+
+  .main_page .articles {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer .footer__content .content__top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .footer .footer__content .content__top .top__logo {
+    padding-top: 50px;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer .footer__content .content__top .top__pharmstandart {
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer .footer__content .content__top .top__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer .footer__content .content__top .top__menu .menu__item {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .footer .footer__content .content__bottom {
+    margin-top: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .footer .footer__content .content__bottom .bottom__links {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .main_page .articles__content .content__slider .slider__item {
     min-height: 390px;
+  }
+
+  .main_page .articles__content {
+    padding-left: 20px;
   }
 }
 
@@ -1571,9 +1714,22 @@ a {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .main_page .articles__content .content__slider {
+    margin-top: 40px;
+  }
+
+  .section_title {
+    color: #000;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .main_page .articles__content .content__slider .slider__item {
-    min-height: 364px;
+    min-height: 310px;
   }
 }
 
@@ -1585,7 +1741,16 @@ a {
     line-height: 15px;
   }
 
+  .section_title {
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 360px) {
   .main_page .articles__content .content__slider .slider__item {
-    min-height: 354px;
+    min-height: 260px;
   }
 }

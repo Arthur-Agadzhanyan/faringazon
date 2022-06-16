@@ -51,6 +51,26 @@ mainPageFaringazonWarningCloseBtn.addEventListener('click',()=>{
 
 const mainPageArticlesSlider = new Swiper('#main_page-articles_slider', {
     speed: 1500,
-    slidesPerView: 3.5,
-    spaceBetween: 24
+
+    spaceBetween: 24,
+    breakpoints:{
+        320:{
+            slidesPerView: 1.2,
+        },
+        600:{
+            slidesPerView: 1.4,
+        },
+        700:{
+            slidesPerView: 1.8,
+        },
+        1000:{
+            slidesPerView: 2.4,
+        },
+        1200:{
+            slidesPerView: 2.8,
+        },
+        1500:{
+            slidesPerView: 3.5,
+        }
+    }
 });

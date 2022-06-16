@@ -1,6 +1,7 @@
 .footer{
   padding: 30px 0px;
   background: $blue;
+
   .footer__content{
     max-width: 95%;
     width: 100%;
@@ -11,6 +12,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 20px;
+      
       .top__pharmstandart{
 
       }
@@ -35,6 +37,46 @@
       .top__logo{
 
       }
+      
+      @media screen and (max-width: 1300px) {
+        flex-direction: column;
+
+        .top__logo{
+          order: 1;
+          margin-bottom: 41px;
+        }
+        .top__pharmstandart{
+          order: 2;
+          margin-bottom: 41px;
+
+        }
+        .top__menu{
+          order: 3;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        align-items: flex-start;
+        .top__logo{
+          padding-top: 50px;
+          max-width: 80vw;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .top__pharmstandart{
+          max-width: 50vw;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .top__menu{
+          flex-direction: column;
+
+          .menu__item{
+            margin: 0;
+            margin-bottom: 25px;
+          }
+        }
+      }
     }
 
     .content__bottom{
@@ -58,6 +100,30 @@
           &:first-child{
             margin-bottom: 8px;
           }
+        }
+      }
+
+      @media screen and (max-width: 1300px) {
+        margin-top: 40px;
+      }
+
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        .bottom__links{
+          order: 1;
+          margin-bottom: 16px;
+          text-align: center;
+        }
+        .bottom__text{
+          order: 2;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        margin-top: 10px;
+        align-items: flex-start;
+        .bottom__links{
+          text-align: left;
         }
       }
     }
