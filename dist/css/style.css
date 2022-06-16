@@ -1538,6 +1538,13 @@ a {
   line-height: 49px;
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}
+
 @media screen and (min-width: 2000px) {
   .main_page .intro__content .content__slider .intro_slider__slide img {
     width: 100%;
