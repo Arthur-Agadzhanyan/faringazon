@@ -15,11 +15,10 @@ function createSlider(sliderSelector, userOptions={}) {
 
 AOS.init()
 
-//
 const navbarBtn = document.getElementById('navbar_btn')
 const navbarPoppup = document.getElementById('navbar_poppup')
 const navHeader = document.getElementById('nav_header')
-//
+
 navbarBtn.addEventListener('click',(e)=>{
     navbarPoppup.classList.toggle('mb_bar_closed')
     navHeader.classList.toggle('mb_header-active')
