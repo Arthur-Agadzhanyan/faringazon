@@ -1,4 +1,4 @@
-<nav class="nav_header">
+<nav id="nav_header" class="nav_header">
     <div class="nav_header__content">
         <div class="content__logo">
             <svg width="262" height="38" viewBox="0 0 262 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,8 +36,37 @@
             <a href="#partners" class="menu__item">Инструкция</a>
         </div>
 
-        <a href="#">
-            <button type="button" class="button content__button">Где купить</button>
-        </a>
+        <div class="content__btns">
+            <a href="#">
+                <button type="button" class="button content__button">Где купить</button>
+            </a>
+            <button id="navbar_btn" class="navbar__btn burger ">
+                <span class="burger__line burger__line_first"></span>
+                <span class="burger__line burger__line_second"></span>
+                <span class="burger__line burger__line_third"></span>
+                <span class="burger__line burger__line_fourth"></span>
+            </button>
+        </div>
     </div>
 </nav>
+
+<div id="navbar_poppup" class="mobile_bar mb_bar_closed">
+    <ul class="navbar__list">
+        <a href="#double_action" class="list__link">
+            <li class="list__item ">О препарате</li>
+        </a>
+        <a href="#usage" class="list__link">
+            <li class="list__item">Применение</li>
+        </a>
+        <a href="#questions" class="list__link">
+            <li class="list__item">Вопросы и ответы</li>
+        </a>
+        <a href="#partners" class="list__link">
+            <li class="list__item">Инструкция</li>
+        </a>
+    </ul>
+
+    <a class="navbar__btn_link" href="#partners">
+        <button class="button navbar__buy">Где купить</button>
+    </a>
+</div>
