@@ -236,11 +236,33 @@
                 <h2 class="section_title">Способ<br> применения</h2>
 
                 <div class="info__controls">
-                    <button class="button button-mans button-mans-active">Взрослым</button>
-                    <button class="button button-kids">детям</button>
+                    <button id="usage_btn_adult" class="button button-mans button-mans-active">Взрослым</button>
+                    <button id="usage_btn_kids" class="button button-kids">детям</button>
                 </div>
                 <p class="kids_age op0">с 3 до 7 лет</p>
-                <div class="info__list">
+                <div id="usage_adult_list" class="info__list info__list-adult">
+                    <div class="list__item list__item-blue">
+                        <div class="item__info">
+                            <p class="info__text">через</p>
+                            <h4 class="info__title">15-30<sup>мин</sup></h4>
+                            <p class="info__text">после еды</p>
+                        </div>
+                    </div>
+
+                    <div class="list__item list__item-blue">
+                        <div class="item__info">
+                            <h4 class="info__title">3-4<sup>дня</sup></h4>
+                        </div>
+                    </div>
+
+                    <div class="list__item list__item-blue">
+                        <div class="item__info">
+                            <h4 class="info__title">4-5<sup>таб</sup></h4>
+                            <p class="info__text">в день</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="usage_kids_list" class="info__list info__list-kids dn">
                     <div class="list__item list__item-blue">
                         <div class="item__info">
                             <p class="info__text">через</p>
@@ -311,7 +333,7 @@
             <div class="content__info">
                 <div class="info__container">
                     <h3 class="section_title">Вопросы и ответы</h3>
-                    <button class="button">Обратная связь</button>
+                    <button class="button show_question_modal_btn">Обратная связь</button>
 
                     <div class="info__accordions">
                         <div class="accordions__item">
@@ -530,6 +552,44 @@
         </div>
     </section>
 </main>
+
+<div id="questionModal" class="order_modal">
+    <div class="overlay close_modal"></div>
+    <div class="modal__content">
+        <div class="close close_modal">
+            <img src="img/icons/close_black.svg" alt="">
+        </div>
+
+        <div class="content__container">
+            <h2 class="modal__content__title">Задай свой вопрос!</h2>
+
+
+                <form id="openTextModal" class="modal__content__form call_accepted_form">
+                    <div class="form__container">
+                    <div class="form__div">
+                        <input type="text" id="name_modal" class="form__input" placeholder=" " required>
+                        <label for="name_modal"class="form__label">Ваше имя</label>
+                    </div>
+
+                    <div class="form__div">
+                        <input type="email" id="phone_modal" class="form__input" placeholder=" " required>
+                        <label for="phone_modal"class="form__label">Ваша эл. почта</label>
+                    </div>
+                    </div>
+                    <div class="form__div">
+                        <textarea type="text" id="position" class="form__input form__input-textarea" rows="10" placeholder=" " required></textarea>
+                        <label for="position"class="form__label">Ваш вопрос</label>
+                    </div>
+
+                    <button class="button modal__btn"><span>Отправить</span></button>
+
+                    <p class="modal__content__text">Отправляя эти данные вы даете <a href="/">согласие на обработку персональных данных</a></p>
+                </form>
+
+        </div>
+
+    </div>
+</div>
 
 @@include('_footer.html')
 

@@ -5,3 +5,150 @@
     line-height: $lh;
 }
 
+@mixin modal($width){
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000000000;
+
+    display: none; // to flex
+    align-items: center;
+    justify-content: center;
+
+    transition: all .2s linear;
+    opacity: 0;
+
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 200;
+        background: rgba(0,0,0,.4);
+    }
+
+    .modal__content{
+        position: relative;
+        z-index: 300;
+
+        max-width: $width;
+        padding: 68px 123px 55px 152px;
+        width: 100%;
+        background: #ECECEC;
+        border-radius: 40px;
+
+        &__title{
+            @include text(#000,36px,600,64px);
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 500px) {
+                @include text(#000,28px,600,29px) ;
+                margin-bottom: 24px;
+            }
+        }
+
+        &__text{
+            @include text(#484848,11px,normal,20px);
+            margin-top: 31px;
+
+            a{
+                color: #484848;
+                text-decoration: underline !important;
+            }
+        }
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+
+            .form__div {
+                flex: 0 1 100%;
+                position: relative;
+                color: #1D1D1D;
+
+                margin-bottom: 24px;
+
+                .form__input {
+                    width: 100%;
+                    background: transparent;
+                    padding: 22px 23px;
+                    position: relative;
+                    z-index: 2;
+                    color: #484848;
+                    background: #fff;
+                    border: none;
+                    outline: none;
+
+                    @include text(#484848, 24px, 600);
+
+                    @media screen and (max-width: 500px) {
+                        padding-left: 19px;
+                    }
+                }
+
+                .form__input:focus + .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+                    top: 2px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #484848;
+                    z-index: 10;
+                }
+
+                .form__input:focus, .form__input:not(:placeholder-shown) {
+                    padding: 24px 23px 20px 23px;
+                }
+
+                .form__label {
+                    transition: all .2s linear;
+                    position: absolute;
+                    left: 24px;
+                    top: 20px;
+                    z-index: 10;
+                    cursor:text;
+                    @include text(#484848, 24px, 600);
+
+                    @media screen and (max-width: 500px) {
+                        left: 22px;
+                    }
+                }
+            }
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .modal__btn{
+            margin-top: 6px;
+            max-width: 230px;
+            background: #F9AA44;
+            transition: all .2s linear;
+
+            &:hover{
+                background: #000;
+                color: #F9AA44
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            padding: 48px 40px 35px 60px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding-left: 16px;
+            padding-right: 23px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        align-items: flex-start;
+
+        .modal__content{
+            border-radius: 0;
+            min-height: 100vh;
+        }
+    }
+}

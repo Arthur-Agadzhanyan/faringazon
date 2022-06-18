@@ -74,3 +74,29 @@ const mainPageArticlesSlider = new Swiper('#main_page-articles_slider', {
         }
     }
 });
+
+// USAGE
+function usageScript(){
+    const usageAdultBtn = document.querySelector('#usage_btn_adult')
+    const usageKidsBtn = document.querySelector('#usage_btn_kids')
+
+    const usageAdultList = document.querySelector('#usage_adult_list')
+    const usageKidsList = document.querySelector('#usage_kids_list')
+
+    usageAdultBtn.addEventListener('click',(e)=>{
+        e.target.classList.add('button-mans-active')
+        usageKidsBtn.classList.remove('button-kids-active')
+
+        usageAdultList.classList.remove('dn')
+        usageKidsList.classList.add('dn')
+    })
+
+    usageKidsBtn.addEventListener('click',(e)=>{
+        e.target.classList.add('button-kids-active')
+        usageAdultBtn.classList.remove('button-mans-active')
+
+        usageAdultList.classList.add('dn')
+        usageKidsList.classList.remove('dn')
+    })
+}
+usageScript()
