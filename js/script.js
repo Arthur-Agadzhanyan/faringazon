@@ -148,6 +148,14 @@ AOS.init()
 const navbarBtn = document.getElementById('navbar_btn')
 const navbarPoppup = document.getElementById('navbar_poppup')
 const navHeader = document.getElementById('nav_header')
+const navbarPoppupLinks = document.querySelectorAll('.navbar_poppup_link')
+
+navbarPoppupLinks.forEach(link=>{
+    link.addEventListener('click',()=>{
+        navbarPoppup.classList.add('mb_bar_closed')
+        navHeader.classList.remove('mb_header-active')
+    })
+})
 
 navbarBtn.addEventListener('click',(e)=>{
     navbarPoppup.classList.toggle('mb_bar_closed')
