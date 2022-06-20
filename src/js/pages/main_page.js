@@ -1,6 +1,6 @@
 // INTRO
 const vanilBtn = document.querySelector('#main_page-intro_slider-vanil_btn')
-const raspberryBtn = document.querySelector('#main_page-intro_slider-raspberry_btn')
+// const raspberryBtn = document.querySelector('#main_page-intro_slider-raspberry_btn')
 
 const mainPageIntroSlider = new Swiper('#main_page-intro_slider', {
     speed: 1500,
@@ -12,9 +12,9 @@ const mainPageIntroSlider = new Swiper('#main_page-intro_slider', {
             let activeIndex = swiper.realIndex;
             if(activeIndex){
                 vanilBtn.classList.remove('btns__item-vanil-active')
-                raspberryBtn.classList.add('btns__item-raspberry-active')
+                // raspberryBtn.classList.add('btns__item-raspberry-active')
             }else{
-                raspberryBtn.classList.remove('btns__item-raspberry-active')
+                // raspberryBtn.classList.remove('btns__item-raspberry-active')
                 vanilBtn.classList.add('btns__item-vanil-active')
             }
         }
@@ -24,16 +24,16 @@ const mainPageIntroSlider = new Swiper('#main_page-intro_slider', {
 vanilBtn.addEventListener('click',()=>{
     mainPageIntroSlider.slideTo(0)
 
-    raspberryBtn.classList.remove('btns__item-raspberry-active')
+    // raspberryBtn.classList.remove('btns__item-raspberry-active')
     vanilBtn.classList.add('btns__item-vanil-active')
 })
 
-raspberryBtn.addEventListener('click',()=>{
-    mainPageIntroSlider.slideTo(1)
-
-    vanilBtn.classList.remove('btns__item-vanil-active')
-    raspberryBtn.classList.add('btns__item-raspberry-active')
-})
+// raspberryBtn.addEventListener('click',()=>{
+//     mainPageIntroSlider.slideTo(1)
+//
+//     vanilBtn.classList.remove('btns__item-vanil-active')
+//     // raspberryBtn.classList.add('btns__item-raspberry-active')
+// })
 
 // WARNING
 const mainPageFaringazonWarning = document.querySelector('#main_page-faringazon_warning')
@@ -97,6 +97,35 @@ function usageScript(){
 
         usageAdultList.classList.add('dn')
         usageKidsList.classList.remove('dn')
+    })
+
+    //HOVERS
+    const elements = [
+        {
+            trigger:document.getElementById('main_page-usage_faringit_trigger'),
+            circle: document.getElementById('main_page-usage_faringit')
+        },
+        {
+            trigger:document.getElementById('main_page-usage_tonzillit_trigger'),
+            circle: document.getElementById('main_page-usage_tonzillit')
+        },
+        {
+            trigger:document.getElementById('main_page-usage_gingivit_trigger'),
+            circle: document.getElementById('main_page-usage_gingivit')
+        },
+        {
+            trigger:document.getElementById('main_page-usage_stomatit_trigger'),
+            circle: document.getElementById('main_page-usage_stomatit')
+        }
+    ]
+
+    elements.forEach((el)=>{
+        el.trigger.addEventListener('mouseenter',()=>{
+            el.circle.classList.remove('op0')
+        })
+        el.trigger.addEventListener('mouseleave',()=>{
+            el.circle.classList.add('op0')
+        })
     })
 }
 usageScript()

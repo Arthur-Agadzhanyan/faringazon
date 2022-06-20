@@ -700,17 +700,13 @@ template {
 }
 
 .order_modal {
-  overflow: auto;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 1000000000;
+  z-index: 100;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -718,6 +714,11 @@ template {
   -o-transition: all .2s linear;
   transition: all .2s linear;
   opacity: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #ececec;
+  border-radius: 40px;
   -webkit-transition: .2s linear;
   -o-transition: .2s linear;
   transition: .2s linear;
@@ -736,7 +737,7 @@ template {
 .order_modal .modal__content {
   position: relative;
   z-index: 300;
-  max-width: 1045px;
+  max-width: 100%;
   padding: 68px 123px 55px 152px;
   width: 100%;
   background: #ECECEC;
@@ -871,7 +872,6 @@ template {
 }
 
 .order_modal .modal__content {
-  overflow: auto;
   padding-top: 80px;
   padding-bottom: 28px;
 }
@@ -921,6 +921,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 70px;
 }
 
 .main_page .intro .container {
@@ -1528,13 +1529,42 @@ template {
 }
 
 .main_page .usage__content .content__indications .indications__content .content__image {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 70%;
           flex: 0 1 70%;
   display: block;
 }
 
-.main_page .usage__content .content__indications .indications__content .content__image img {
+.main_page .usage__content .content__indications .indications__content .content__image .image_circle {
+  position: absolute;
+  z-index: 2;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.main_page .usage__content .content__indications .indications__content .content__image .image_circle-faringit {
+  top: 73%;
+  left: 41%;
+}
+
+.main_page .usage__content .content__indications .indications__content .content__image .image_circle-tonzillit {
+  top: 72%;
+  left: 43%;
+}
+
+.main_page .usage__content .content__indications .indications__content .content__image .image_circle-gingivit {
+  top: 64%;
+  left: 36.5%;
+}
+
+.main_page .usage__content .content__indications .indications__content .content__image .image_circle-stomatit {
+  top: 63.5%;
+  left: 37.8%;
+}
+
+.main_page .usage__content .content__indications .indications__content .content__image .image_human {
   max-width: 100%;
   display: block;
   margin-top: auto;
@@ -1583,6 +1613,7 @@ template {
 }
 
 .main_page .questions__content .content__info {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 57%;
           flex: 0 1 57%;
@@ -1942,6 +1973,10 @@ a {
   line-height: 49px;
 }
 
+.op0 {
+  opacity: 0;
+}
+
 .anchor {
   display: block;
   position: relative;
@@ -2020,6 +2055,11 @@ a {
             flex: 0 1 32%;
   }
 
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-stomatit {
+    top: 64%;
+    left: 42%;
+  }
+
   .main_page .questions__content .content__info .info__container {
     padding-left: 50px;
     padding-right: 50px;
@@ -2043,6 +2083,11 @@ a {
     font-size: 54px;
     font-weight: 400;
     line-height: 59px;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-gingivit {
+    top: 64%;
+    left: 40%;
   }
 }
 
@@ -2421,6 +2466,16 @@ a {
     margin-bottom: 12px;
   }
 
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-faringit {
+    top: 73%;
+    left: 47%;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-tonzillit {
+    top: 73%;
+    left: 49%;
+  }
+
   .main_page .usage__content .content__indications {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -2636,17 +2691,6 @@ a {
     height: 17px;
   }
 
-  .order_modal {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-
-  .order_modal .modal__content {
-    border-radius: 0;
-    min-height: 100vh;
-  }
-
   .main_page .usage__content .content__info {
     padding-left: 20px;
     padding-right: 20px;
@@ -2773,13 +2817,32 @@ a {
     line-height: normal;
   }
 
+  .main_page .intro__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
   .main_page .intro__content .content__slider .intro_slider__slide img {
     max-width: 120% !important;
     width: 120% !important;
   }
 
+  .main_page .intro__content .content__slider .intro_slider .slider_pills img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .main_page .intro__content {
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
   .main_page .intro {
     min-height: calc(100vh - 106px);
+    padding-bottom: 0px;
   }
 
   .main_page .double_action__content .content__info .info__title {
@@ -3010,16 +3073,13 @@ a {
   }
 
   .order_modal {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 1000000000;
+    z-index: 100;
     display: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3027,6 +3087,9 @@ a {
     -o-transition: all .2s linear;
     transition: all .2s linear;
     opacity: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .order_modal .overlay {
@@ -3247,6 +3310,26 @@ a {
     font-weight: 600;
     line-height: 40px;
   }
+
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-faringit {
+    top: 70%;
+    left: 43%;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-tonzillit {
+    top: 70%;
+    left: 45%;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-gingivit {
+    top: 61.5%;
+    left: 41.7%;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-stomatit {
+    top: 61.5%;
+    left: 41.7%;
+  }
 }
 
 @media screen and (max-width: 450px) and (max-width: 500px) {
@@ -3277,19 +3360,6 @@ a {
   .order_modal .modal__content {
     padding-left: 16px;
     padding-right: 23px;
-  }
-}
-
-@media screen and (max-width: 450px) and (max-width: 700px) {
-  .order_modal {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-
-  .order_modal .modal__content {
-    border-radius: 0;
-    min-height: 100vh;
   }
 }
 
@@ -3440,6 +3510,16 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-gingivit {
+    top: 60%;
+    left: 40.5%;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__image .image_circle-stomatit {
+    top: 60%;
+    left: 40.5%;
   }
 
   .main_page .articles__content .content__slider .slider__item {

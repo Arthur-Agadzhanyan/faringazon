@@ -7,6 +7,7 @@
 
     display: flex;
     justify-content: center;
+    padding-bottom: 70px;
 
     .container{
       max-width: 100%;
@@ -165,6 +166,9 @@
           padding-top: 0px;
           padding-left: 20px;
         }
+        @media screen and (max-width: 600px) {
+          flex: 0 1 auto;
+        }
         @media screen and (max-width: 450px) {
           padding-bottom: 30px;
         }
@@ -178,6 +182,7 @@
           overflow: hidden !important;
           &__slide{
             overflow: hidden;
+
             img{
               max-width: 100% !important;
 
@@ -198,6 +203,16 @@
               max-height: 65vh;
             }
           }
+
+          .slider_pills{
+            img{
+              @media screen and (max-width: 600px) {
+                max-width: 100% !important;
+                width: 100% !important;
+              }
+            }
+
+          }
         }
 
         @media screen and (max-width: 1600px) {
@@ -212,6 +227,10 @@
         padding-top: 60px;
         flex-direction: column;
       }
+      @media screen and (max-width: 600px) {
+        height: 100%;
+        justify-content: flex-start;
+      }
     }
 
     @media screen and (max-width: 1500px){
@@ -225,6 +244,7 @@
 
     @media screen and (max-width: 600px){
       min-height: calc(100vh - 106px);
+      padding-bottom: 0px;
     }
     @media screen and (max-width: 450px) {
       min-height: calc(90vh - 106px);
@@ -916,9 +936,78 @@
           }
           
           .content__image{
+            position: relative;
             flex: 0 1 70%;
             display: block;
-            img{
+
+            .image_circle{
+              position: absolute;
+              z-index: 2;
+              transition: all .2s linear;
+            }
+            .image_circle-faringit{
+              top: 73%;
+              left: 41%;
+
+              @media screen and (max-width: 1100px) {
+                top: 73%;
+                left: 47%;
+              }
+              @media screen and (max-width: 450px) {
+                top: 70%;
+                left: 43%;
+              }
+            }
+
+            .image_circle-tonzillit{
+              top: 72%;
+              left: 43%;
+
+              @media screen and (max-width: 1100px) {
+                top: 73%;
+                left: 49%;
+              }
+              @media screen and (max-width: 450px) {
+                top: 70%;
+                left: 45%;
+              }
+            }
+
+            .image_circle-gingivit{
+              top: 64%;
+              left: 36.5%;
+              @media screen and (max-width: 1600px) {
+                top: 64%;
+                left: 40%;
+              }
+              @media screen and (max-width: 450px) {
+                top: 61.5%;
+                left: 41.7%;
+              }
+              @media screen and (max-width: 360px) {
+                top: 60%;
+                left: 40.5%;
+              }
+            }
+
+            .image_circle-stomatit{
+              top: 63.5%;
+              left: 37.8%;
+              @media screen and (max-width: 1700px) {
+                top: 64%;
+                left: 42%;
+              }
+              @media screen and (max-width: 450px) {
+                top: 61.5%;
+                left: 41.7%;
+              }
+              @media screen and (max-width: 360px) {
+                top: 60%;
+                left: 40.5%;
+              }
+            }
+
+            .image_human{
               max-width: 100%;
               display: block;
               margin-top: auto;
@@ -1009,6 +1098,7 @@
       }
 
       .content__info {
+        position: relative;
         flex: 0 1 57%;
         background: #ECECEC;
         border-radius: 40px;

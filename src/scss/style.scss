@@ -86,7 +86,9 @@ a{
         @include text(#000,28px,600);
     }
 }
-
+.op0{
+    opacity: 0;
+}
 .anchor{
     display: block;
     position: relative;

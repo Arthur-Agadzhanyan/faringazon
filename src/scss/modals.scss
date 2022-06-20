@@ -21,13 +21,13 @@
 }
 
 .order_modal{
-  overflow: auto;
-  @include modal(1045px);
+  @include modal(100%);
+  background: #ececec;
+  border-radius: 40px;
 
   transition: .2s linear;
 
   .modal__content{
-    overflow: auto;
     padding-top: 80px;
     padding-bottom: 28px;
 
