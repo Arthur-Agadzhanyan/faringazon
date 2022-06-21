@@ -22,7 +22,8 @@
 @import "./modals.scss";
 
 //Pages
- @import "./pages/main_page";
+@import "./pages/main_page";
+@import "./pages/news_page";
 
 //Components
 @import "./components/button.scss";
@@ -96,3 +97,11 @@ a{
     visibility: hidden;
 }
 
+.closed_text {
+    @media screen and (max-width: 500px) {
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

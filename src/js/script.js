@@ -12,6 +12,7 @@ function createSlider(sliderSelector, userOptions={}) {
 }
 
 @@include('pages/main_page.js');
+@@include('pages/news_page.js');
 
 AOS.init()
 
@@ -78,5 +79,28 @@ if(closeModal){
                 setTimeout(()=>questionModal.style.display = "none",300)
             }
         })
+    })
+}
+
+//CLOSE TEXT BUTTONS
+
+const closedTextBlocks = document.querySelectorAll('.with_closed_text')
+
+if(closedTextBlocks.length){
+    console.log(1212)
+    closedTextBlocks.forEach((closedTextBlock)=>{
+        const text = closedTextBlock.querySelector('.text_block')
+        const btn = closedTextBlock.querySelector('.closed_text__button')
+
+        btn.addEventListener('click',(e)=>{
+            text.classList.toggle('closed_text')
+
+            if(text.classList.contains('closed_text')){
+                btn.textContent = 'Развернуть'
+            }else{
+                btn.textContent = 'Свернуть'
+            }
+        })
+
     })
 }
