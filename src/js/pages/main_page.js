@@ -9,25 +9,25 @@ if(document.querySelector('.main_page')){
             delay: 3000
         },
         on: {
-            slideChange: function (swiper) {
-                let activeIndex = swiper.realIndex;
-                if(activeIndex){
-                    vanilBtn.classList.remove('btns__item-vanil-active')
-                    // raspberryBtn.classList.add('btns__item-raspberry-active')
-                }else{
-                    // raspberryBtn.classList.remove('btns__item-raspberry-active')
-                    vanilBtn.classList.add('btns__item-vanil-active')
-                }
-            }
+            // slideChange: function (swiper) {
+            //     let activeIndex = swiper.realIndex;
+            //     if(activeIndex){
+            //         vanilBtn.classList.remove('btns__item-vanil-active')
+            //         // raspberryBtn.classList.add('btns__item-raspberry-active')
+            //     }else{
+            //         // raspberryBtn.classList.remove('btns__item-raspberry-active')
+            //         vanilBtn.classList.add('btns__item-vanil-active')
+            //     }
+            // }
         }
     });
 
-    vanilBtn.addEventListener('click',()=>{
-        mainPageIntroSlider.slideTo(0)
+    // vanilBtn.addEventListener('click',()=>{
+    //     mainPageIntroSlider.slideTo(0)
 
-        // raspberryBtn.classList.remove('btns__item-raspberry-active')
-        vanilBtn.classList.add('btns__item-vanil-active')
-    })
+    //     // raspberryBtn.classList.remove('btns__item-raspberry-active')
+    //     vanilBtn.classList.add('btns__item-vanil-active')
+    // })
 
 // raspberryBtn.addEventListener('click',()=>{
 //     mainPageIntroSlider.slideTo(1)
