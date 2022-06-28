@@ -122,6 +122,7 @@ if(document.querySelector('.main_page')){
     function usageScript(){
         const usageAdultBtn = document.querySelector('#usage_btn_adult')
         const usageKidsBtn = document.querySelector('#usage_btn_kids')
+        const kidsAge = document.querySelector('#main-page-kids_age')
 
         const usageAdultList = document.querySelector('#usage_adult_list')
         const usageKidsList = document.querySelector('#usage_kids_list')
@@ -129,6 +130,7 @@ if(document.querySelector('.main_page')){
         usageAdultBtn.addEventListener('click',(e)=>{
             e.target.classList.add('button-mans-active')
             usageKidsBtn.classList.remove('button-kids-active')
+            kidsAge.classList.toggle('op0')
 
             usageAdultList.classList.remove('dn')
             usageKidsList.classList.add('dn')
@@ -137,6 +139,7 @@ if(document.querySelector('.main_page')){
         usageKidsBtn.addEventListener('click',(e)=>{
             e.target.classList.add('button-kids-active')
             usageAdultBtn.classList.remove('button-mans-active')
+            kidsAge.classList.toggle('op0')
 
             usageAdultList.classList.add('dn')
             usageKidsList.classList.remove('dn')
