@@ -1947,7 +1947,7 @@ template {
 }
 
 .main_page .partners__content .content__list .list__item:not(:nth-child(5n)):after {
-  content: url("../../img/logos/partners/mark.svg");
+  content: url("../img/logos/partners/mark.svg");
   position: absolute;
   bottom: -80px;
   right: -50px;
@@ -2741,7 +2741,7 @@ a {
   }
 
   .main_page .partners__content .content__list .list__item:not(:nth-child(4n)):after {
-    content: url("../../img/logos/partners/mark.svg");
+    content: url("../img/logos/partners/mark.svg");
     position: absolute;
     bottom: -80px;
     right: -50px;
@@ -2903,7 +2903,7 @@ a {
   }
 
   .main_page .partners__content .content__list .list__item:not(:nth-child(3n)):after {
-    content: url("../../img/logos/partners/mark.svg");
+    content: url("../img/logos/partners/mark.svg");
     position: absolute;
     bottom: -80px;
     right: -50px;
@@ -3239,7 +3239,7 @@ a {
   }
 
   .main_page .partners__content .content__list .list__item:not(:nth-child(2n)):after {
-    content: url("../../img/logos/partners/mark.svg") !important;
+    content: url("../img/logos/partners/mark.svg") !important;
     position: absolute;
     bottom: -80px;
     right: -45px;
