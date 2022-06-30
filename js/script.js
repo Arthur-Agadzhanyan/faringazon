@@ -50,6 +50,7 @@ if(document.querySelector('.main_page')){
         autoplay: {
             delay: 3000
         },
+        effect: "fade",
         on: {
             // slideChange: function (swiper) {
             //     let activeIndex = swiper.realIndex;
