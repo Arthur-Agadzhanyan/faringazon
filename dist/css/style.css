@@ -1056,11 +1056,16 @@ template {
 }
 
 .main_page .intro__content .content__slider .intro_slider__slide {
+  opacity: 0 !important;
   overflow: hidden;
 }
 
 .main_page .intro__content .content__slider .intro_slider__slide img {
   max-width: 100% !important;
+}
+
+.main_page .intro__content .content__slider .intro_slider .swiper-slide-active {
+  opacity: 1 !important;
 }
 
 .main_page .faringazon_warning {
@@ -2832,10 +2837,6 @@ a {
             flex-direction: column;
   }
 
-  .main_page .faringazon_warning {
-    display: none;
-  }
-
   .main_page .double_action__content {
     padding-left: 57px;
   }
@@ -3077,6 +3078,25 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+  .main_page .faringazon_warning .faringazon_warning__text {
+    color: #BABABA;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .main_page .faringazon_warning .faringazon_warning__btn {
+    max-width: 20px;
+  }
+
+  .main_page .faringazon_warning .faringazon_warning__btn img {
+    max-width: 100%;
+  }
+
+  .main_page .faringazon_warning {
+    padding-top: 18px;
+  }
+
   .main_page .questions__content {
     padding: 0px 50px;
   }
@@ -3406,6 +3426,11 @@ a {
     padding-bottom: 0px;
   }
 
+  .main_page .faringazon_warning {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   .main_page .double_action__content .content__info .info__title {
     color: #000;
     font-size: 36px;
@@ -3626,6 +3651,13 @@ a {
 
   .order_modal .overlay {
     background: #1d1d1d !important;
+  }
+
+  .main_page .faringazon_warning .faringazon_warning__text {
+    color: #BABABA;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
   }
 
   .main_page .double_action__content .content__info .info__title {
@@ -4095,6 +4127,10 @@ a {
 
   .main_page .intro {
     min-height: calc(78vh - 106px);
+  }
+
+  .main_page .faringazon_warning .faringazon_warning__btn {
+    min-width: 18px;
   }
 
   .main_page .benefits .benefits__image {
