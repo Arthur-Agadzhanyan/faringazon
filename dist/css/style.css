@@ -1199,9 +1199,49 @@ template {
 
 .main_page .benefits .benefits__image {
   display: block;
+  width: 280px;
   margin-bottom: -13%;
   margin-left: auto;
   margin-right: 12vw;
+}
+
+.main_page .benefits .benefits__image svg {
+  max-width: 100%;
+}
+
+.main_page .benefits .benefits__image svg .balls {
+  -webkit-animation-name: balls_anim;
+          animation-name: balls_anim;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes balls_anim {
+  0% {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+  }
+
+  100% {
+    -webkit-transform: rotate(2.5deg) translate(13px, -2px);
+            transform: rotate(2.5deg) translate(13px, -2px);
+  }
+}
+
+@keyframes balls_anim {
+  0% {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+  }
+
+  100% {
+    -webkit-transform: rotate(2.5deg) translate(13px, -2px);
+            transform: rotate(2.5deg) translate(13px, -2px);
+  }
 }
 
 .main_page .benefits .benefits__list {
@@ -1690,8 +1730,79 @@ template {
   margin-left: auto;
 }
 
-.main_page .questions__content .content__image img {
+.main_page .questions__content .content__image svg {
   max-width: 100%;
+}
+
+.main_page .questions__content .content__image svg .sharph {
+  -webkit-animation-name: anim;
+          animation-name: anim;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  margin-right: -1px;
+}
+
+.main_page .questions__content .content__image svg .sharph_small {
+  -webkit-animation-name: second_anim;
+          animation-name: second_anim;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: rotate(0deg) translateY(0px);
+            transform: rotate(0deg) translateY(0px);
+  }
+
+  100% {
+    -webkit-transform: rotate(3deg) translateY(-5px);
+            transform: rotate(3deg) translateY(-5px);
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-transform: rotate(0deg) translateY(0px);
+            transform: rotate(0deg) translateY(0px);
+  }
+
+  100% {
+    -webkit-transform: rotate(3deg) translateY(-5px);
+            transform: rotate(3deg) translateY(-5px);
+  }
+}
+
+@-webkit-keyframes second_anim {
+  0% {
+    -webkit-transform: rotate(0deg) translateY(0px);
+            transform: rotate(0deg) translateY(0px);
+  }
+
+  100% {
+    -webkit-transform: rotate(2deg) translateY(-5px);
+            transform: rotate(2deg) translateY(-5px);
+  }
+}
+
+@keyframes second_anim {
+  0% {
+    -webkit-transform: rotate(0deg) translateY(0px);
+            transform: rotate(0deg) translateY(0px);
+  }
+
+  100% {
+    -webkit-transform: rotate(2deg) translateY(-5px);
+            transform: rotate(2deg) translateY(-5px);
+  }
 }
 
 .main_page .questions__content .content__info {
@@ -3180,7 +3291,7 @@ a {
   }
 
   .main_page .benefits .benefits__image {
-    margin-bottom: -25%;
+    margin-bottom: -30%;
     margin-right: 60px;
     width: 220px;
   }
@@ -3216,6 +3327,10 @@ a {
   .nav_header .burger {
     width: 24px;
     height: 17px;
+  }
+
+  .main_page .benefits .benefits__image {
+    margin-bottom: -35%;
   }
 
   .main_page .usage__content .content__info {
@@ -3449,7 +3564,7 @@ a {
   }
 
   .main_page .benefits .benefits__image {
-    margin-bottom: -33%;
+    margin-bottom: -40%;
     margin-right: 30px;
   }
 
@@ -3683,7 +3798,7 @@ a {
   }
 
   .main_page .benefits .benefits__image {
-    margin-bottom: -38%;
+    margin-bottom: -50%;
   }
 
   .main_page .benefits .benefits__list .list__item {
@@ -3993,7 +4108,7 @@ a {
   }
 
   .main_page .benefits .benefits__image {
-    margin-bottom: -43%;
+    margin-bottom: -50%;
     margin-right: 0px;
   }
 
@@ -4134,7 +4249,7 @@ a {
   }
 
   .main_page .benefits .benefits__image {
-    margin-bottom: -40%;
+    margin-bottom: -67%;
     margin-right: -30px;
     width: 180px;
   }
@@ -4314,7 +4429,7 @@ a {
   }
 
   .main_page .benefits .benefits__image {
-    margin-bottom: -48%;
+    margin-bottom: -76%;
   }
 
   .main_page .benefits .benefits__list .list__item:not(:first-child) {

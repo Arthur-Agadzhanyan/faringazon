@@ -450,9 +450,30 @@
     margin-top: -110px;
     .benefits__image{
       display: block;
+      width: 280px;
       margin-bottom: -13%;
       margin-left: auto;
       margin-right: 12vw;
+
+      svg{
+        max-width: 100%;
+
+        .balls{
+          animation-name: balls_anim;
+          animation-duration: 1.5s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate; 
+        }
+
+        @keyframes balls_anim {
+          0%{
+            transform: rotate(0deg) translate(0px,0px);
+          }
+          100%{
+            transform: rotate(2.5deg) translate(13px,-2px);
+          }
+        }
+      }
       
       @media screen and (min-width: 2150px) {
         margin-bottom: -9%;
@@ -470,28 +491,31 @@
         margin-bottom: -25%;
       }
       @media screen and (max-width: 800px) {
-        margin-bottom: -25%;
+        margin-bottom: -30%;
         margin-right: 60px;
         width: 220px;
       }
+      @media screen and (max-width: 700px) {
+        margin-bottom: -35%;
+      }
       @media screen and (max-width: 600px) {
-        margin-bottom: -33%;
+        margin-bottom: -40%;
         margin-right: 30px;
       }
       @media screen and (max-width: 500px) {
-        margin-bottom: -38%;
+        margin-bottom: -50%;
       }
       @media screen and (max-width: 450px) {
-        margin-bottom: -43%;
+        margin-bottom: -50%;
         margin-right: 0px;
       }
       @media screen and (max-width: 400px) {
-        margin-bottom: -40%;
+        margin-bottom: -67%;
         margin-right: -30px;
         width: 180px;
       }
       @media screen and (max-width: 350px) {
-        margin-bottom: -48%;
+        margin-bottom: -76%;
       }
      }
 
@@ -1298,8 +1322,43 @@
         flex: 0 1 40%;
         padding-right: 33px;
         margin-left: auto;
-        img{
+
+        
+
+        svg{
           max-width: 100%;
+
+          .sharph{
+            animation-name: anim;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; 
+            margin-right: -1px;
+          }
+          .sharph_small{
+            animation-name: second_anim;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; 
+          }
+        }
+
+        @keyframes anim {
+          0%{
+            transform: rotate(0deg) translateY(0px);
+          }
+          100%{
+            transform: rotate(3deg) translateY(-5px);
+          }
+        }
+        
+        @keyframes second_anim {
+          0%{
+            transform: rotate(0deg) translateY(0px);
+          }
+          100%{
+            transform: rotate(2deg) translateY(-5px);
+          }
         }
         @media screen and (max-width: 1400px) {
           display: none;
