@@ -1064,8 +1064,10 @@ template {
 }
 
 .main_page .faringazon_warning {
-  position: sticky;
-  top: 112px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #fff;
   z-index: 1000;
   padding: 32px;
