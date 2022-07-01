@@ -2637,6 +2637,11 @@ a {
     margin-top: 0px;
   }
 
+  .main_page .intro .intro__lines {
+    width: 100vw;
+    left: -30%;
+  }
+
   .main_page .double_action__content .content__info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2746,6 +2751,10 @@ a {
     -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
             transform: scale(0.9);
+  }
+
+  html {
+    zoom: 90%;
   }
 }
 
@@ -3220,6 +3229,10 @@ a {
 
   .main_page .partners__content .content__list {
     margin-top: 70px;
+  }
+
+  html {
+    zoom: 100%;
   }
 }
 
