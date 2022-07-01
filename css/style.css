@@ -520,11 +520,11 @@ template {
 .mobile_bar {
   display: none;
   position: fixed;
-  top: 105px;
+  top: 90px;
   left: 0;
   right: 0;
   z-index: 900;
-  min-height: calc(100vh - 71px);
+  min-height: calc(100vh - 90px);
   background: #F27A67;
   -webkit-transition: all .5s linear;
   -o-transition: all .5s linear;
@@ -2619,6 +2619,10 @@ a {
     margin: 0px 15px;
   }
 
+  .nav_header {
+    padding: 24px 0px;
+  }
+
   .order_modal .modal__content {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
@@ -2642,6 +2646,11 @@ a {
 
   .main_page .double_action__content .content__info .info__title {
     margin-bottom: 20px;
+  }
+
+  .main_page .double_action__content {
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
 
   .main_page .benefits .benefits__image {
@@ -3036,6 +3045,10 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .main_page .double_action__content {
+    padding-bottom: 57px;
   }
 
   .main_page .double_action__content {
