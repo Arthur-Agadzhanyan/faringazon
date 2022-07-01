@@ -39,7 +39,8 @@ html{
     transition: scroll-behavior 1s linear;
 
     @media screen and (max-width: 1400px) {
-       zoom: 90%
+       zoom: 90%;
+       
     }
     @media screen and (max-width: 1000px) {
         zoom: 100%
@@ -55,8 +56,6 @@ body{
 
     -ms-overflow-style: none;  /* IE и Edge */
     scrollbar-width: none;  /* Firefox */
-
-    
 }
 
 body::-webkit-scrollbar {
