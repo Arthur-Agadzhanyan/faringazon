@@ -155,7 +155,9 @@
     }
   }
 
-
+  @media screen and (max-width: 1400px) {
+    padding: 24px 0px;
+  }
 }
 
 .mb_header-active{
@@ -193,11 +195,11 @@
 .mobile_bar{
   display: none;
   position: fixed;
-  top: 105px;
+  top: 90px;
   left: 0;
   right: 0;
   z-index: 900;
-  min-height: calc(100vh - 71px);
+  min-height: calc(100vh - 90px);
   background: $red;
 
   transition: all .5s linear;
