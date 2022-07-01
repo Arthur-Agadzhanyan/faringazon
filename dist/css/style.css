@@ -2561,6 +2561,14 @@ a {
     line-height: 59px;
   }
 
+  .main_page .benefits .benefits__image {
+    margin-bottom: -16%;
+  }
+
+  .main_page .benefits {
+    margin-top: -200px;
+  }
+
   .main_page .usage__content .content__indications .indications__content .content__image .image_circle-gingivit {
     top: 64%;
     left: 40%;
@@ -2578,7 +2586,7 @@ a {
   }
 
   .main_page .benefits .benefits__image {
-    margin-bottom: -15%;
+    margin-bottom: -18%;
   }
 
   .main_page .benefits .benefits__list .list__item {
@@ -2611,6 +2619,20 @@ a {
     margin: 0px 15px;
   }
 
+  .order_modal .modal__content {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .order_modal .modal__content .form__input-textarea {
+    height: 160px;
+    padding-bottom: 10px !important;
+  }
+
+  .order_modal .modal__content .form__text {
+    margin-top: 0px;
+  }
+
   .main_page .double_action__content .content__info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2622,8 +2644,46 @@ a {
     margin-bottom: 20px;
   }
 
+  .main_page .benefits .benefits__image {
+    margin-bottom: -19%;
+  }
+
   .main_page .usage .usage__pills {
     display: none;
+  }
+
+  .main_page .usage__content .content__info .info__controls {
+    margin-top: 10px;
+  }
+
+  .main_page .usage__content .content__info .kids_age {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+  }
+
+  .main_page .usage__content .content__info .info__list .list__item .item__info .info__title sup {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .main_page .usage__content .content__info .info__list .list__item .item__info .info__title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .main_page .usage__content .content__info .info__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 12px;
+    min-height: 90px;
   }
 
   .main_page .usage__content .content__info {
@@ -2633,8 +2693,40 @@ a {
     padding-left: 50px;
   }
 
+  .main_page .usage__content .content__indications .indications__content .content__container .info__item {
+    padding: 24px 34px;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__container {
+    padding-top: 15px;
+  }
+
+  .main_page .usage__content .content__indications {
+    padding-top: 15px;
+  }
+
   .main_page .questions__content .content__image {
     display: none;
+  }
+
+  .main_page .questions__content .content__info .info__container {
+    padding: 40px 50px;
+  }
+
+  .main_page .questions__content .content__info .button {
+    margin-bottom: 15px;
+  }
+
+  .main_page .questions__content .content__info .info__accordions .accordions__item .accordion__content .content__container .content__text {
+    color: #484848;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 5px;
+  }
+
+  .main_page .questions__content .content__info .info__accordions .accordions__item {
+    margin-bottom: 10px;
   }
 
   .main_page .questions__content .content__info {
@@ -2642,6 +2734,9 @@ a {
         -ms-flex: 0 1 80%;
             flex: 0 1 80%;
     margin-bottom: 60px;
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
@@ -2690,12 +2785,7 @@ a {
 
   .main_page .benefits .benefits__image {
     margin-bottom: -20%;
-  }
-
-  .main_page .usage__content .content__info .info__list .list__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 48%;
-            flex: 0 1 48%;
+    margin-right: -20px;
   }
 
   .main_page .usage__content .content__indications {
@@ -3123,6 +3213,8 @@ a {
 @media screen and (max-width: 950px) {
   .main_page .benefits .benefits__image {
     margin-bottom: -25%;
+    margin-right: 20px;
+    width: 220px;
   }
 
   .main_page .benefits .benefits__list .list__item-blue {
@@ -3206,6 +3298,11 @@ a {
 
   .main_page .faringazon_warning {
     padding-top: 18px;
+  }
+
+  .main_page .benefits .benefits__image {
+    margin-bottom: -30%;
+    margin-right: 10px;
   }
 
   .main_page .questions__content {
@@ -3292,8 +3389,6 @@ a {
 
   .main_page .benefits .benefits__image {
     margin-bottom: -30%;
-    margin-right: 60px;
-    width: 220px;
   }
 
   .main_page .usage__content .content__info {
@@ -3350,6 +3445,9 @@ a {
 
   .main_page .questions__content .content__info {
     border-radius: 0px;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
   }
 
   .main_page .questions__content {
@@ -3896,11 +3994,6 @@ a {
   .mobile_bar .navbar__btn_link .navbar__buy {
     min-width: 160px;
     font-size: 15px;
-  }
-
-  .order_modal .modal__content {
-    padding-top: 60px !important;
-    padding-bottom: 60px !important;
   }
 
   .order_modal {
