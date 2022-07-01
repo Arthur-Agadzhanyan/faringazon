@@ -2656,10 +2656,18 @@ a {
   .main_page .double_action__content {
     padding-top: 20px;
     padding-bottom: 30px;
+    -moz-transform: scale(1, 0.9);
+    -moz-transform-origin: left right;
   }
 
   .main_page .benefits .benefits__image {
     margin-bottom: -19%;
+  }
+
+  .main_page .benefits {
+    -moz-transform: scale(1, 0.8);
+    -moz-transform-origin: left center;
+    margin-top: -250px;
   }
 
   .main_page .usage .usage__pills {
@@ -3058,6 +3066,7 @@ a {
 
   .main_page .double_action__content {
     padding-bottom: 57px;
+    -moz-transform: scale(1, 1);
   }
 
   .main_page .double_action__content {
@@ -3078,6 +3087,12 @@ a {
 
   .main_page .benefits .benefits__list .list__item {
     padding-right: 20px;
+  }
+
+  .main_page .benefits {
+    -moz-transform: scale(1, 1);
+    -moz-transform-origin: left center;
+    margin-top: -200px;
   }
 
   .main_page .usage__content .content__info {
