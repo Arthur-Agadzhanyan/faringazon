@@ -1193,6 +1193,8 @@ template {
 }
 
 .main_page .benefits {
+  position: relative;
+  z-index: 2;
   overflow: hidden;
   margin-top: -110px;
 }
@@ -2498,6 +2500,10 @@ a {
     max-width: 1690px;
     padding-left: 50px;
   }
+
+  html {
+    zoom: 90%;
+  }
 }
 
 @media screen and (max-width: 1700px) {
@@ -2542,6 +2548,15 @@ a {
   }
 }
 
+@media screen and (max-width: 1650px) {
+  .main_page .double_action__content {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    -moz-transform: scale(1, 0.9);
+    -moz-transform-origin: left right;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .main_page .intro__content .content__info {
     padding-left: 6vw;
@@ -2566,7 +2581,7 @@ a {
   }
 
   .main_page .benefits {
-    margin-top: -200px;
+    margin-top: -150px;
   }
 
   .main_page .usage__content .content__indications .indications__content .content__image .image_circle-gingivit {
@@ -2577,6 +2592,10 @@ a {
   .news_page .content_block .block__title-top {
     margin-top: 120px;
     margin-left: 80px;
+  }
+
+  html {
+    zoom: 88%;
   }
 }
 
@@ -2653,18 +2672,12 @@ a {
     margin-bottom: 20px;
   }
 
-  .main_page .double_action__content {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    -moz-transform: scale(1, 0.9);
-    -moz-transform-origin: left right;
-  }
-
   .main_page .benefits .benefits__image {
     margin-bottom: -19%;
   }
 
   .main_page .benefits {
+    margin-top: -200px;
     -moz-transform: scale(1, 0.8);
     -moz-transform-origin: left center;
   }

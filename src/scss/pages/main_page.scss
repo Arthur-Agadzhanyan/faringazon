@@ -424,7 +424,7 @@
           flex-direction: column;
         }
       }
-      @media screen and (max-width: 1400px) {
+      @media screen and (max-width: 1650px) {
         padding-top: 20px;
         padding-bottom: 30px;
         -moz-transform:  scale(1,0.9);
@@ -462,6 +462,8 @@
   }
 
   .benefits{
+    position: relative;
+    z-index: 2;
     overflow: hidden;
     margin-top: -110px;
     .benefits__image{
@@ -891,9 +893,10 @@
     }
 
     @media screen and (max-width: 1600px) {
-      margin-top: -200px;
+      margin-top: -150px;
     }
     @media screen and (max-width: 1400px) {
+      margin-top: -200px;
       -moz-transform:  scale(1,0.8);
       -moz-transform-origin: left center;
     }

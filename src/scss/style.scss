@@ -37,6 +37,12 @@
 html{
     scroll-behavior: smooth;
     transition: scroll-behavior 1s linear;
+    @media screen and (max-width: 1800px) {
+        zoom: 90%;
+    }
+    @media screen and (max-width: 1600px) {
+        zoom: 88%;
+    }
 
     @media screen and (max-width: 1400px) {
        zoom: 90%;
