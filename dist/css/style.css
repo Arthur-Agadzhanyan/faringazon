@@ -2558,6 +2558,11 @@ a {
 }
 
 @media screen and (max-width: 1600px) {
+  .order_modal .modal__content .form__input-textarea {
+    height: 160px;
+    padding-bottom: 10px !important;
+  }
+
   .main_page .intro__content .content__info {
     padding-left: 6vw;
     padding-bottom: 100px;
@@ -2666,11 +2671,6 @@ a {
   .order_modal .modal__content {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
-  }
-
-  .order_modal .modal__content .form__input-textarea {
-    height: 160px;
-    padding-bottom: 10px !important;
   }
 
   .order_modal .modal__content .form__text {
