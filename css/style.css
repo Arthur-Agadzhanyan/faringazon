@@ -2601,6 +2601,15 @@ a {
     margin-bottom: 10px;
   }
 
+  .main_page .questions__content .content__info {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 65%;
+            flex: 0 1 65%;
+  }
+
   .news_page .content_block .block__title-top {
     margin-top: 120px;
     margin-left: 80px;
@@ -2684,14 +2693,20 @@ a {
     margin-bottom: 20px;
   }
 
+  .main_page .double_action {
+    -moz-transform: translateY(60px);
+  }
+
   .main_page .benefits .benefits__image {
     margin-bottom: -19%;
+    -moz-transform: scale(1, 1.2);
   }
 
   .main_page .benefits {
-    margin-top: -200px;
+    margin-top: -210px;
     -moz-transform: scale(1, 0.8);
     -moz-transform-origin: left center;
+    padding-top: 50px;
   }
 
   .main_page .usage .usage__pills {
@@ -3087,10 +3102,12 @@ a {
 
   .main_page .double_action {
     padding-top: 40px;
+    -moz-transform: translateY(0px);
   }
 
   .main_page .benefits .benefits__image {
     margin-bottom: -22%;
+    -moz-transform: scale(1);
   }
 
   .main_page .benefits .benefits__list .list__item .item__info .info__image img {
