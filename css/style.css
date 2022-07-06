@@ -2589,6 +2589,18 @@ a {
     left: 40%;
   }
 
+  .main_page .questions__content .content__info .info__container {
+    padding: 40px 50px;
+  }
+
+  .main_page .questions__content .content__info .button {
+    margin-bottom: 15px;
+  }
+
+  .main_page .questions__content .content__info .info__accordions .accordions__item {
+    margin-bottom: 10px;
+  }
+
   .news_page .content_block .block__title-top {
     margin-top: 120px;
     margin-left: 80px;
@@ -2743,24 +2755,12 @@ a {
     display: none;
   }
 
-  .main_page .questions__content .content__info .info__container {
-    padding: 40px 50px;
-  }
-
-  .main_page .questions__content .content__info .button {
-    margin-bottom: 15px;
-  }
-
   .main_page .questions__content .content__info .info__accordions .accordions__item .accordion__content .content__container .content__text {
     color: #484848;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     padding-top: 5px;
-  }
-
-  .main_page .questions__content .content__info .info__accordions .accordions__item {
-    margin-bottom: 10px;
   }
 
   .main_page .questions__content .content__info {
