@@ -1272,7 +1272,12 @@ template {
 .main_page .benefits .benefits__list .list__item-blue {
   background: #3056A5;
   position: relative;
-  z-index: 5;
+  z-index: 7;
+}
+
+.main_page .benefits .benefits__list .list__item-blue .item__info {
+  position: relative;
+  z-index: 7;
 }
 
 .main_page .benefits .benefits__list .list__item-green {
@@ -1357,6 +1362,10 @@ template {
   right: -105%;
   width: 420px !important;
   padding-right: 58px;
+}
+
+.main_page .benefits .benefits__list .list__item .item__info .info__hov_message-effect-blue {
+  top: -85%;
 }
 
 .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-ages {
@@ -2871,6 +2880,10 @@ a {
     top: -98%;
   }
 
+  .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-effect-blue {
+    top: -85%;
+  }
+
   .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-ages {
     top: -98%;
   }
@@ -3766,6 +3779,11 @@ a {
     z-index: 1000;
   }
 
+  .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-effect-blue {
+    top: -80%;
+    right: -105%;
+  }
+
   .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-ages {
     top: -88%;
   }
@@ -4287,8 +4305,12 @@ a {
   .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-effect {
     max-width: 240px;
     width: 100%;
-    top: -130%;
+    top: -120%;
     right: -60%;
+  }
+
+  .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-effect-blue {
+    top: -85%;
   }
 
   .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-ages {
@@ -4609,8 +4631,12 @@ a {
   }
 
   .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-effect {
-    top: -150%;
+    top: -120%;
     right: -100%;
+  }
+
+  .main_page .benefits .benefits__list .list__item .item__info .info__hov_message-effect-blue {
+    top: -100%;
   }
 
   .main_page .benefits .benefits__list .list__item .item__info .info__image img {

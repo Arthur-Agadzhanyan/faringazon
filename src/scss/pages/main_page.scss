@@ -579,7 +579,12 @@
         &-blue{
           background: #3056A5;
           position: relative;
-          z-index: 5;
+          z-index: 7;
+
+          .item__info{
+            position: relative;
+            z-index: 7;
+          }
           @media screen and (max-width: 950px) {
             z-index: 2;
           }
@@ -718,12 +723,31 @@
               @media screen and (max-width: 450px) {
                 max-width: 240px;
                 width: 100%;
-                top: -130%;
+                top: -120%;
                 right: -60%;
               }
               @media screen and (max-width: 350px) {
-                top: -150%;
+                top: -120%;
                 right: -100%;
+              }
+
+              &-blue{
+                top: -85%;
+                
+                @media screen and (max-width: 1250px) {
+                  top: -85%;
+                }
+
+                @media screen and (max-width: 600px) {
+                  top: -80%;
+                  right: -105%;
+                }
+                @media screen and (max-width: 450px) {
+                  top: -85%;
+                }
+                @media screen and (max-width: 350px) {
+                  top: -100%;
+                }
               }
             }
 
