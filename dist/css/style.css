@@ -2695,17 +2695,17 @@ a {
   }
 
   .main_page .double_action {
-    -moz-transform: translateY(60px);
+    -moz-transform: translateY(60px) scale(0.8);
   }
 
   .main_page .benefits .benefits__image {
     margin-bottom: -19%;
-    -moz-transform: scale(1, 1.2);
+    -moz-transform: translateX(54%) translateY(5%) scale(1.1);
   }
 
   .main_page .benefits {
     margin-top: -210px;
-    -moz-transform: scale(1, 0.8);
+    -moz-transform: translateY(-10%) scale(0.8, 0.7);
     -moz-transform-origin: left center;
     padding-top: 50px;
   }
@@ -2839,7 +2839,11 @@ a {
 
   .main_page .benefits .benefits__image {
     margin-bottom: -20%;
-    margin-right: -20px;
+    -moz-transform: translateX(54%) translateY(5%) scale(1);
+  }
+
+  .main_page .benefits {
+    -moz-transform: translateY(-10%) scale(0.95, 0.8);
   }
 
   .main_page .usage__content .content__indications {
@@ -2893,43 +2897,6 @@ a {
             flex: 0 1 42%;
   }
 
-  .main_page .usage__content .content__indications .indications__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .main_page .usage__content .content__indications .indications__content .content__container {
-    max-width: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
-  .main_page .usage__content .content__indications .indications__content .content__container .info__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 47%;
-            flex: 0 1 47%;
-  }
-
-  .main_page .usage__content .content__indications .indications__content .content__image {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-
   .main_page .usage__content .content__indications {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 55%;
@@ -2977,6 +2944,10 @@ a {
 
   .main_page .double_action__content {
     padding-left: 87px;
+  }
+
+  .main_page .benefits .benefits__image {
+    -moz-transform: translateX(51%) translateY(5%) scale(1);
   }
 
   .main_page .questions__content .content__info {
@@ -3108,7 +3079,8 @@ a {
 
   .main_page .benefits .benefits__image {
     margin-bottom: -22%;
-    -moz-transform: scale(1);
+    margin-right: -20px;
+    -moz-transform: translateX(0%) translateY(0%) scale(1);
   }
 
   .main_page .benefits .benefits__list .list__item .item__info .info__image img {
@@ -3143,6 +3115,43 @@ a {
   .main_page .usage__content .content__indications .indications__content .content__image .image_circle-tonzillit {
     top: 73%;
     left: 49%;
+  }
+
+  .main_page .usage__content .content__indications .indications__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__container {
+    max-width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__container .info__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 47%;
+            flex: 0 1 47%;
+  }
+
+  .main_page .usage__content .content__indications .indications__content .content__image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 
   .main_page .usage__content .content__indications {
